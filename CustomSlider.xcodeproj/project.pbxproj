@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		044B18461E8210A90016C137 /* COXCustomSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B18451E8210A90016C137 /* COXCustomSlider.m */; };
-		044B18491E82116A0016C137 /* COXSlideBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B18481E82116A0016C137 /* COXSlideBall.m */; };
+		040C58961E861F1000D57334 /* CoxSegmentSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C58951E861F1000D57334 /* CoxSegmentSlider.m */; };
+		040C589A1E862B6500D57334 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C58991E862B6500D57334 /* UIColor+Hex.m */; };
 		048E5A701E80CCAA000CF849 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E5A6F1E80CCAA000CF849 /* main.m */; };
 		048E5A731E80CCAA000CF849 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E5A721E80CCAA000CF849 /* AppDelegate.m */; };
 		048E5A761E80CCAA000CF849 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E5A751E80CCAA000CF849 /* ViewController.m */; };
@@ -37,10 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		044B18441E8210A90016C137 /* COXCustomSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COXCustomSlider.h; sourceTree = "<group>"; };
-		044B18451E8210A90016C137 /* COXCustomSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COXCustomSlider.m; sourceTree = "<group>"; };
-		044B18471E82116A0016C137 /* COXSlideBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COXSlideBall.h; sourceTree = "<group>"; };
-		044B18481E82116A0016C137 /* COXSlideBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COXSlideBall.m; sourceTree = "<group>"; };
+		040C58941E861F1000D57334 /* CoxSegmentSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoxSegmentSlider.h; sourceTree = "<group>"; };
+		040C58951E861F1000D57334 /* CoxSegmentSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoxSegmentSlider.m; sourceTree = "<group>"; };
+		040C58981E862B6500D57334 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		040C58991E862B6500D57334 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		048E5A6B1E80CCAA000CF849 /* CustomSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048E5A6F1E80CCAA000CF849 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		048E5A711E80CCAA000CF849 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,9 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040C58971E862B6500D57334 /* UIColor + Hex */ = {
+			isa = PBXGroup;
+			children = (
+				040C58981E862B6500D57334 /* UIColor+Hex.h */,
+				040C58991E862B6500D57334 /* UIColor+Hex.m */,
+			);
+			path = "UIColor + Hex";
+			sourceTree = "<group>";
+		};
 		048E5A621E80CCAA000CF849 = {
 			isa = PBXGroup;
 			children = (
+				040C58971E862B6500D57334 /* UIColor + Hex */,
 				048E5A6D1E80CCAA000CF849 /* CustomSlider */,
 				048E5A871E80CCAA000CF849 /* CustomSliderTests */,
 				048E5A921E80CCAA000CF849 /* CustomSliderUITests */,
@@ -111,10 +121,8 @@
 				048E5A721E80CCAA000CF849 /* AppDelegate.m */,
 				048E5A741E80CCAA000CF849 /* ViewController.h */,
 				048E5A751E80CCAA000CF849 /* ViewController.m */,
-				044B18441E8210A90016C137 /* COXCustomSlider.h */,
-				044B18451E8210A90016C137 /* COXCustomSlider.m */,
-				044B18471E82116A0016C137 /* COXSlideBall.h */,
-				044B18481E82116A0016C137 /* COXSlideBall.m */,
+				040C58941E861F1000D57334 /* CoxSegmentSlider.h */,
+				040C58951E861F1000D57334 /* CoxSegmentSlider.m */,
 				048E5A771E80CCAA000CF849 /* Main.storyboard */,
 				048E5A7A1E80CCAA000CF849 /* Assets.xcassets */,
 				048E5A7C1E80CCAA000CF849 /* LaunchScreen.storyboard */,
@@ -286,10 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044B18491E82116A0016C137 /* COXSlideBall.m in Sources */,
 				048E5A761E80CCAA000CF849 /* ViewController.m in Sources */,
 				048E5A731E80CCAA000CF849 /* AppDelegate.m in Sources */,
-				044B18461E8210A90016C137 /* COXCustomSlider.m in Sources */,
+				040C58961E861F1000D57334 /* CoxSegmentSlider.m in Sources */,
+				040C589A1E862B6500D57334 /* UIColor+Hex.m in Sources */,
 				048E5A701E80CCAA000CF849 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

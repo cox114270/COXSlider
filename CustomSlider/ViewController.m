@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "COXCustomSlider.h"
+#import "CoxSegmentSlider.h"
 @interface ViewController ()
 
 @end
@@ -17,12 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    COXCustomSlider *slider = [[COXCustomSlider alloc] initWithFrame:CGRectMake(0, 0, IPHONE_WIDTH, 50) unSlidableIndex:5 forbiddenDirection:DIRECTION_LEFT numbersOfSegments:10 unit:@"小时"];
-    slider.center = self.view.center;
-    slider.backgroundColor = [UIColor whiteColor];
-    slider.block = ^(NSInteger index){
-        NSLog(@"当前段数---->%ld",index);
-    };
+    CoxSegmentSlider *slider = [[CoxSegmentSlider alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame) / 2, CGRectGetWidth(self.view.frame), 50) sectionsCount:10 minIndex:0 maxIndex:10 stopIndex:5 stopDirection:STOP_DIRECTION_TYPE_LEFT showUnit:@"元"];
     [self.view addSubview:slider];
 }
 
